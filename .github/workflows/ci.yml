@@ -11,7 +11,7 @@ jobs:
 
       - name: download
         run: |
-          git config --local user.email "justjavac@gmail.com"
+          git config --local user.email ${{ secrets.EMAIL }}
           git config --local user.name "迷渡"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
