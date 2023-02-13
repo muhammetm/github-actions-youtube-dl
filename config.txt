@@ -1,4 +1,4 @@
 --batch-file playlist.txt
---output downloads/%(playlist_id)s/%(title)s_%(id)s.%(ext)s
+--output downloads/%(epoch)s/%(title)s_%(id)s.%(ext)s
 -N 10
 --continue
